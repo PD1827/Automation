@@ -1,0 +1,615 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 816902100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "launch Browser",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;launch-browser",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4087202100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Initialize browser",
+            "match": {
+              "location": "ApolloTestSteps.initialize_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 715100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Browser opens",
+            "match": {
+              "location": "ApolloTestSteps.browser_opens()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 790800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Browser is launched",
+            "match": {
+              "location": "ApolloTestSteps.browser_is_launchedn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@Start_browser"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 96537900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login with valid data",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;login-with-valid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2295816800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on home page",
+            "match": {
+              "location": "ApolloTestSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 276564900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User clicks on profile option",
+            "match": {
+              "location": "ApolloTestSteps.user_clicks_on_profil_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using name\u003dmobileNumber\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:284)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)\r\n\tat com.testrunner.ApolloPageFactory.setMnumb(ApolloPageFactory.java:112)\r\n\tat step_definition.ApolloTestSteps.user_enters_invalid_phone_number(ApolloTestSteps.java:116)\r\n\tat ✽.User enters valid phone number 9689774038(Feature/Appointment.feature:14)\r\n",
+              "duration": 13204853700,
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "User enters valid phone number 9689774038",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9689774038",
+                  "offset": 31
+                }
+              ],
+              "location": "ApolloTestSteps.user_enters_invalid_phone_number(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 348600,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User clicks on next button",
+            "match": {
+              "location": "ApolloTestSteps.user_clicks_on_next_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 567900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enters valid otp",
+            "match": {
+              "location": "ApolloTestSteps.user_enters_valid_otp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 446400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User clicks on login button",
+            "match": {
+              "location": "ApolloTestSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@Successful_login"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 68775100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Book appointment page",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;book-appointment-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\PRANDESA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76db79b2d34b6eedf1c2f6fafafd2b0e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat step_definition.ApolloTestSteps.user_is_on_home_page(ApolloTestSteps.java:84)\r\n\tat ✽.User is on home page(Feature/Appointment.feature:25)\r\n",
+              "duration": 26763500,
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "User is on home page",
+            "match": {
+              "location": "ApolloTestSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95400,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User clicks on book appointment",
+            "match": {
+              "location": "ApolloTestSteps.user_clicks_on_book_appointment()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76100,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "Book appointment page should be displayed",
+            "match": {
+              "location": "ApolloTestSteps.book_appointment_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@BookAppointment_page"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 44116800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Select specialist",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;select-specialist",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 684500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User is on book appointment page",
+            "match": {
+              "location": "ApolloTestSteps.user_is_on_book_appointment_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\PRANDESA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76db79b2d34b6eedf1c2f6fafafd2b0e\n*** Element info: {Using\u003dxpath, value\u003d//a[@href \u003d \u0027/specialties/dermatology\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)\r\n\tat com.testrunner.ApolloPageFactory.clickSbutton(ApolloPageFactory.java:158)\r\n\tat step_definition.ApolloTestSteps.user_selects_specialist_type_from_the_given_list(ApolloTestSteps.java:173)\r\n\tat ✽.User selects specialist type from the given list(Feature/Appointment.feature:32)\r\n",
+              "duration": 9011500,
+              "status": "failed"
+            },
+            "line": 32,
+            "name": "User selects specialist type from the given list",
+            "match": {
+              "location": "ApolloTestSteps.user_selects_specialist_type_from_the_given_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241400,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Navigate to doctor specialist page",
+            "match": {
+              "location": "ApolloTestSteps.navigate_to_doctor_specialist_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@Select_specialist"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46683600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 52,
+        "name": "Select Book video consult",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;select-book-video-consult;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 458400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User is on book appointment page",
+            "match": {
+              "location": "ApolloTestSteps.user_is_on_book_appointment_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256100,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Navigate to doctor specialist page",
+            "match": {
+              "location": "ApolloTestSteps.navigate_to_doctor_specialist_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\PRANDESA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76db79b2d34b6eedf1c2f6fafafd2b0e\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"mainContainerCT\"]/div[2]/div[1]/div[2]/div[2]/div[3]/div/div[3]/div/input}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)\r\n\tat com.testrunner.ApolloPageFactory.setSearchdoctor(ApolloPageFactory.java:167)\r\n\tat step_definition.ApolloTestSteps.user_selects_doctor_from_the_displayed_list_of_doctors(ApolloTestSteps.java:190)\r\n\tat ✽.User selects doctor from the displayed list of doctors Dr. S Madhuri(Feature/Appointment.feature:39)\r\n",
+              "duration": 22378400,
+              "status": "failed"
+            },
+            "line": 39,
+            "name": "User selects doctor from the displayed list of doctors Dr. S Madhuri",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dr. S Madhuri",
+                  "offset": 55
+                }
+              ],
+              "location": "ApolloTestSteps.user_selects_doctor_from_the_displayed_list_of_doctors(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 275800,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "Information of the selected doctor appears",
+            "match": {
+              "location": "ApolloTestSteps.information_of_the_selected_doctor_appears()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 142800,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "User selects book video consult option",
+            "match": {
+              "location": "ApolloTestSteps.user_selects_book_video_consult_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "A dialog box conataining details of video consultation appears",
+            "match": {
+              "location": "ApolloTestSteps.a_dialog_box_conataining_details_of_video_consultation_appears()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 115400,
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "User selects consult now option",
+            "match": {
+              "location": "ApolloTestSteps.user_selects_consult_now_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 125600,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Use selects payment button",
+            "match": {
+              "location": "ApolloTestSteps.use_selects_payment_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128700,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Patient details are displayed",
+            "match": {
+              "location": "ApolloTestSteps.patient_details_are_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 366200,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "User selects patients name",
+            "match": {
+              "location": "ApolloTestSteps.user_selects_patients_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 136900,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "User selects payment button",
+            "match": {
+              "location": "ApolloTestSteps.user_selects_payment_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164300,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Payments page is displayed",
+            "match": {
+              "location": "ApolloTestSteps.payments_page_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@book_video_consult_successful"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 49958000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 55,
+        "name": "logout",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\PRANDESA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76db79b2d34b6eedf1c2f6fafafd2b0e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)\r\n\tat step_definition.ApolloTestSteps.user_is_on_home_page(ApolloTestSteps.java:84)\r\n\tat ✽.User is on home page(Feature/Appointment.feature:56)\r\n",
+              "duration": 13073800,
+              "status": "failed"
+            },
+            "line": 56,
+            "name": "User is on home page",
+            "match": {
+              "location": "ApolloTestSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111900,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "User clicks on profile button",
+            "match": {
+              "location": "ApolloTestSteps.user_clicks_on_profile_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80400,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "User select logout button",
+            "match": {
+              "location": "ApolloTestSteps.user_select_logout_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@Successful_logout"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39710600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ApolloTestSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 61,
+        "name": "End browser session",
+        "description": "",
+        "id": "apollo-24/7-book-appointment;end-browser-session",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: disconnected: unable to connect to renderer\n  (failed to check if window was closed: disconnected: unable to connect to renderer)\n  (Session info: chrome\u003d108.0.5359.125)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LIN51007411\u0027, ip: \u002710.103.3.229\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\\Users\\PRANDESA\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49718}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 76db79b2d34b6eedf1c2f6fafafd2b0e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)\r\n\tat step_definition.ApolloTestSteps.end_Browser(ApolloTestSteps.java:282)\r\n\tat ✽.End Browser(Feature/Appointment.feature:62)\r\n",
+              "duration": 32245442300,
+              "status": "failed"
+            },
+            "line": 62,
+            "name": "End Browser",
+            "match": {
+              "location": "ApolloTestSteps.end_Browser()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Book_appointment"
+          },
+          {
+            "name": "@Close_Browser"
+          }
+        ]
+      }
+    ],
+    "name": "Apollo 24/7 Book Appointment",
+    "description": "",
+    "id": "apollo-24/7-book-appointment",
+    "keyword": "Feature",
+    "uri": "Feature/Appointment.feature",
+    "tags": [
+      {
+        "name": "@Book_appointment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
